@@ -48,8 +48,9 @@ function funcaojuros(){
                 //calcula mora 
                 mora = parseFloat(item.ValorCompra) * 0.02;
                 // Dá o valor atualizado
-                item.ValorAtualizado = parseFloat(item.ValorCompra) + juros + mora;
-            }else{
+		valorcomjuros = parseFloat(item.ValorCompra) + juros + mora;
+                item.ValorAtualizado = valorcomjuros.toFixed(2);
+                }else{
                 item.ValorAtualizado = item.ValorCompra;
             }     
 
