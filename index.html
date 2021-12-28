@@ -6,16 +6,30 @@
         <title>Metodo Map</title>
     </head>
     <body>
+        <h1>Cadastro de Clientes</h1>
         <form>
+            <div>
+            <label for="nome">Nome Completo:</label>
             <input type="text" id="nome" value="" placeholder="Nome Completo">
+            </div>
             <br/>
+            <div>
+            <label for="datavencimento">Data Vencimento:</label>
             <input type="date" id="datavencimento" value="" placeholder="Data do Vencimento">
+            </div>
             <br/>
+            <div>
+            <label for="valor">Valor:</label>
             <input type="number" id="valor" value="" placeholder="Valor da Fatura">
+            </div>
+            <br/>
+            <div>
             <input type="button" id="enviar" value="Enviar" onclick="incluircliente()">
             <input type="reset" value="Limpar"> 
+            </div>
         </form>
 
+        <h1>Lista de Boletos</h1>
         <table id="tblista">
             <thead>
                 <tr>
@@ -27,9 +41,10 @@
             </thead>
             <tbody></tbody>
         </table>
-
+        <br/>
         <button onclick="funcaojuros()">Calcular Juros</button>
-
+        <br/>
+        <h1>Lista de Boletos com valores atualizados</h1>
         <table id="tbjuros">
             <thead>
                 <tr>
